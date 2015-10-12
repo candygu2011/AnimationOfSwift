@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AutoLayoutViewController: UINavigationController {
+class AutoLayoutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
