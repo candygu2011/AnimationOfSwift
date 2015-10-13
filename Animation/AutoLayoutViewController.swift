@@ -9,13 +9,33 @@
 import UIKit
 
 class AutoLayoutViewController: UIViewController {
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        println("%s",__FUNCTION__)
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        println("%s",__FUNCTION__)
+
+    }
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        println("%s",__FUNCTION__)
+
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        println("%s",__FUNCTION__)
     }
+    override func loadView() {
+        super.loadView()
+        println("%s",__FUNCTION__)
 
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

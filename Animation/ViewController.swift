@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var userName: UITextField!
     
@@ -47,10 +47,42 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        
 
     }
-
+    
+    func keyboardWillShow(notification:NSNotification){
+        let dict = NSDictionary(dictionary: notification.userInfo!)
+        let keyboardFrame = dict[UIKeyboardFrameEndUserInfoKey]!.CGRectValue()
+        let duration = dict[UIKeyboardAnimationDurationUserInfoKey]!.doubleValue
+        UIView.animateWithDuration(duration, animations: { () -> Void in
+            self.view.transform = CGAffineTransformMakeTranslation(0, -keyboardFrame.size.height)
+        })
+        
+        println(keyboardFrame.size.height)
+    }
+    
+    func keyboardWillHide(notification:NSNotification){
+        let dict = NSDictionary(dictionary: notification.userInfo!)
+        let duration = dict[UIKeyboardAnimationDurationUserInfoKey]!.doubleValue
+        UIView.animateWithDuration(duration, animations: { () -> Void in
+            self.view.transform = CGAffineTransformIdentity
+        })
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        
+        self.view.endEditing(true)
+    }
+    
+    deinit{
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
  
+  
 
 }
 
