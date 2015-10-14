@@ -9,9 +9,13 @@
 import UIKit
 
 class AutoLayoutViewController: UIViewController {
+    
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         println("%s",__FUNCTION__)
+     
+        
         
     }
     
@@ -30,6 +34,12 @@ class AutoLayoutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         println("%s",__FUNCTION__)
+        let myButton = MyButton(count: 10, frame: CGRectMake(50, 100, 100, 30), color: nil)
+        myButton.center.x = self.view.center.x
+        myButton.animationType = MyButtonAnimationType.AnimationTypeScale
+        myButton.layer.masksToBounds = true
+        myButton.layer.cornerRadius = 2
+        self.view.addSubview(myButton)
     }
     override func loadView() {
         super.loadView()
@@ -42,14 +52,6 @@ class AutoLayoutViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

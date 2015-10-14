@@ -16,6 +16,7 @@
 		06220CAD1BCB7E6300E76BC2 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 06220CAB1BCB7E6300E76BC2 /* cloud.png */; };
 		06220CAE1BCB7E6300E76BC2 /* sun.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 06220CAC1BCB7E6300E76BC2 /* sun.jpeg */; };
 		06220CB01BCB815800E76BC2 /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06220CAF1BCB815800E76BC2 /* AutoLayoutViewController.swift */; };
+		06A1B3F61BCE08D60077F09A /* TapMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1B3F51BCE08D60077F09A /* TapMe.swift */; };
 		06C19A211BCCD9F9005739C6 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C19A051BCCD9F9005739C6 /* NSData+ImageContentType.m */; };
 		06C19A221BCCD9F9005739C6 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C19A071BCCD9F9005739C6 /* SDImageCache.m */; };
 		06C19A231BCCD9F9005739C6 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C19A091BCCD9F9005739C6 /* SDWebImageCompat.m */; };
@@ -33,6 +34,7 @@
 		06C19A301BCCDA0B005739C6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C19A2F1BCCDA0B005739C6 /* ImageIO.framework */; };
 		06C19A321BCCDA45005739C6 /* MyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C19A311BCCDA45005739C6 /* MyImageView.swift */; };
 		06C19A361BCCDDB0005739C6 /* CircularLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C19A351BCCDDB0005739C6 /* CircularLoaderView.swift */; };
+		06C19A441BCD1359005739C6 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C19A431BCD1359005739C6 /* MyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,7 @@
 		06220CAB1BCB7E6300E76BC2 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 		06220CAC1BCB7E6300E76BC2 /* sun.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun.jpeg; sourceTree = "<group>"; };
 		06220CAF1BCB815800E76BC2 /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
+		06A1B3F51BCE08D60077F09A /* TapMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapMe.swift; sourceTree = "<group>"; };
 		06C19A041BCCD9F9005739C6 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
 		06C19A051BCCD9F9005739C6 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		06C19A061BCCD9F9005739C6 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 		06C19A311BCCDA45005739C6 /* MyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImageView.swift; sourceTree = "<group>"; };
 		06C19A341BCCDB7D005739C6 /* Animation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animation-Bridging-Header.h"; sourceTree = "<group>"; };
 		06C19A351BCCDDB0005739C6 /* CircularLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLoaderView.swift; sourceTree = "<group>"; };
+		06C19A431BCD1359005739C6 /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 				06220CAF1BCB815800E76BC2 /* AutoLayoutViewController.swift */,
 				06C19A311BCCDA45005739C6 /* MyImageView.swift */,
 				06C19A351BCCDDB0005739C6 /* CircularLoaderView.swift */,
+				06C19A431BCD1359005739C6 /* MyButton.swift */,
+				06A1B3F51BCE08D60077F09A /* TapMe.swift */,
 				06220C8B1BCB59A000E76BC2 /* Main.storyboard */,
 				06220C8E1BCB59A000E76BC2 /* Images.xcassets */,
 				06220C901BCB59A000E76BC2 /* LaunchScreen.xib */,
@@ -330,6 +336,8 @@
 				06C19A291BCCD9F9005739C6 /* UIButton+WebCache.m in Sources */,
 				06C19A2C1BCCD9F9005739C6 /* UIImageView+HighlightedWebCache.m in Sources */,
 				06C19A241BCCD9F9005739C6 /* SDWebImageDecoder.m in Sources */,
+				06C19A441BCD1359005739C6 /* MyButton.swift in Sources */,
+				06A1B3F61BCE08D60077F09A /* TapMe.swift in Sources */,
 				06220C8A1BCB59A000E76BC2 /* ViewController.swift in Sources */,
 				06C19A231BCCD9F9005739C6 /* SDWebImageCompat.m in Sources */,
 				06220C881BCB59A000E76BC2 /* AppDelegate.swift in Sources */,

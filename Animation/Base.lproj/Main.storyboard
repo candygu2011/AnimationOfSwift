@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EvK-XU-ltj">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -116,10 +116,10 @@
                                 <include reference="NyM-mP-vzr"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="G3X-sy-Hb7"/>
                                 <include reference="8iF-uc-qCd"/>
                                 <include reference="afN-LF-021"/>
                                 <include reference="g9l-Cb-pdC"/>
+                                <exclude reference="G3X-sy-Hb7"/>
                                 <include reference="SKs-si-SWp"/>
                             </mask>
                         </variation>
@@ -135,6 +135,123 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="339" y="435"/>
+        </scene>
+        <!--Tap Me-->
+        <scene sceneID="xod-EQ-GKO">
+            <objects>
+                <viewController id="EvK-XU-ltj" customClass="TapMe" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R1A-yd-0La"/>
+                        <viewControllerLayoutGuide type="bottom" id="SNd-2K-V7a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bif-35-ojs">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7M-bo-Snf">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scorce" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eon-qF-BKl">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="D3M-7c-XuL"/>
+                                    <constraint firstAttribute="width" constant="130" id="alT-xo-quh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="D3M-7c-XuL"/>
+                                        <exclude reference="alT-xo-quh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="D3M-7c-XuL"/>
+                                        <include reference="alT-xo-quh"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsG-DG-tED">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.61960784310000006" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="Vmq-f1-Vw9"/>
+                                    <constraint firstAttribute="width" constant="167" id="jhW-Zl-dsj"/>
+                                </constraints>
+                                <state key="normal" title="Tap Me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Vmq-f1-Vw9"/>
+                                        <exclude reference="jhW-Zl-dsj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Vmq-f1-Vw9"/>
+                                        <include reference="jhW-Zl-dsj"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="EvK-XU-ltj" eventType="touchUpInside" id="HDc-Zf-arf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88859180039999996" green="0.88859180039999996" blue="0.88859180039999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="NsG-DG-tED" secondAttribute="centerY" id="679-WB-SWW"/>
+                            <constraint firstAttribute="centerX" secondItem="eon-qF-BKl" secondAttribute="centerX" id="Icy-ea-zFz"/>
+                            <constraint firstAttribute="centerX" secondItem="e7M-bo-Snf" secondAttribute="centerX" id="LDR-7R-YFH"/>
+                            <constraint firstAttribute="centerX" secondItem="NsG-DG-tED" secondAttribute="centerX" id="knJ-Ba-RZo"/>
+                            <constraint firstItem="SNd-2K-V7a" firstAttribute="top" secondItem="eon-qF-BKl" secondAttribute="bottom" constant="10" id="nNr-MQ-blK"/>
+                            <constraint firstItem="e7M-bo-Snf" firstAttribute="top" secondItem="bif-35-ojs" secondAttribute="top" id="sZz-JJ-8Ag">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="e7M-bo-Snf"/>
+                                <exclude reference="eon-qF-BKl"/>
+                                <exclude reference="NsG-DG-tED"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="LDR-7R-YFH"/>
+                                <exclude reference="sZz-JJ-8Ag"/>
+                                <exclude reference="679-WB-SWW"/>
+                                <exclude reference="knJ-Ba-RZo"/>
+                                <exclude reference="Icy-ea-zFz"/>
+                                <exclude reference="nNr-MQ-blK"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="e7M-bo-Snf"/>
+                                <include reference="eon-qF-BKl"/>
+                                <include reference="NsG-DG-tED"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="LDR-7R-YFH"/>
+                                <include reference="sZz-JJ-8Ag"/>
+                                <include reference="679-WB-SWW"/>
+                                <include reference="knJ-Ba-RZo"/>
+                                <include reference="Icy-ea-zFz"/>
+                                <include reference="nNr-MQ-blK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="eon-qF-BKl" id="BjM-qp-wYv"/>
+                        <outlet property="timeLabel" destination="e7M-bo-Snf" id="MKg-Jo-ZPd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVs-qj-hWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-436.5" y="1187.25"/>
         </scene>
         <!--Auto Layout View Controller-->
         <scene sceneID="zvb-Es-0bg">
@@ -172,6 +289,24 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abo-fZ-O2z">
+                                <rect key="frame" x="195" y="40" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="despec" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEO-5z-qLp">
+                                <rect key="frame" x="195" y="66" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kr-Vc-Tm4">
+                                <rect key="frame" x="30" y="160" width="183" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTP-16-aaO" userLabel="icon">
                                 <rect key="frame" x="130" y="40" width="45" height="45"/>
                                 <color key="backgroundColor" red="0.75294117650000003" green="0.24079872499999999" blue="0.51240786790000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -214,24 +349,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abo-fZ-O2z">
-                                <rect key="frame" x="195" y="40" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="despec" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEO-5z-qLp">
-                                <rect key="frame" x="195" y="66" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kr-Vc-Tm4">
-                                <rect key="frame" x="30" y="160" width="183" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -335,7 +452,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mn5-A5-HU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="319" y="1162.5"/>
+            <point key="canvasLocation" x="321" y="966"/>
         </scene>
     </scenes>
     <resources>
