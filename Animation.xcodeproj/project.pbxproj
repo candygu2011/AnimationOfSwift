@@ -17,6 +17,10 @@
 		06220CAE1BCB7E6300E76BC2 /* sun.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 06220CAC1BCB7E6300E76BC2 /* sun.jpeg */; };
 		06220CB01BCB815800E76BC2 /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06220CAF1BCB815800E76BC2 /* AutoLayoutViewController.swift */; };
 		06A1B3F61BCE08D60077F09A /* TapMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1B3F51BCE08D60077F09A /* TapMe.swift */; };
+		06A1B40D1BCE3CBE0077F09A /* gezi.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A1B40C1BCE3CBE0077F09A /* gezi.png */; };
+		06A1B4121BCE3EC50077F09A /* ButtonTap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 06A1B40F1BCE3EC50077F09A /* ButtonTap.wav */; };
+		06A1B4131BCE3EC50077F09A /* HallOfTheMountainKing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 06A1B4101BCE3EC50077F09A /* HallOfTheMountainKing.mp3 */; };
+		06A1B4141BCE3EC50077F09A /* SecondBeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 06A1B4111BCE3EC50077F09A /* SecondBeep.wav */; };
 		06C19A211BCCD9F9005739C6 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C19A051BCCD9F9005739C6 /* NSData+ImageContentType.m */; };
 		06C19A221BCCD9F9005739C6 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C19A071BCCD9F9005739C6 /* SDImageCache.m */; };
 		06C19A231BCCD9F9005739C6 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C19A091BCCD9F9005739C6 /* SDWebImageCompat.m */; };
@@ -62,6 +66,10 @@
 		06220CAC1BCB7E6300E76BC2 /* sun.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun.jpeg; sourceTree = "<group>"; };
 		06220CAF1BCB815800E76BC2 /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
 		06A1B3F51BCE08D60077F09A /* TapMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapMe.swift; sourceTree = "<group>"; };
+		06A1B40C1BCE3CBE0077F09A /* gezi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gezi.png; sourceTree = "<group>"; };
+		06A1B40F1BCE3EC50077F09A /* ButtonTap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ButtonTap.wav; sourceTree = "<group>"; };
+		06A1B4101BCE3EC50077F09A /* HallOfTheMountainKing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HallOfTheMountainKing.mp3; sourceTree = "<group>"; };
+		06A1B4111BCE3EC50077F09A /* SecondBeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SecondBeep.wav; sourceTree = "<group>"; };
 		06C19A041BCCD9F9005739C6 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
 		06C19A051BCCD9F9005739C6 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		06C19A061BCCD9F9005739C6 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 		06220C841BCB59A000E76BC2 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				06A1B40E1BCE3EC50077F09A /* Sounds */,
 				06C19A021BCCD99C005739C6 /* 3lib */,
 				06220CAB1BCB7E6300E76BC2 /* cloud.png */,
 				06220CAC1BCB7E6300E76BC2 /* sun.jpeg */,
@@ -183,9 +192,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		06A1B40E1BCE3EC50077F09A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				06A1B40F1BCE3EC50077F09A /* ButtonTap.wav */,
+				06A1B4101BCE3EC50077F09A /* HallOfTheMountainKing.mp3 */,
+				06A1B4111BCE3EC50077F09A /* SecondBeep.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		06C19A021BCCD99C005739C6 /* 3lib */ = {
 			isa = PBXGroup;
 			children = (
+				06A1B40C1BCE3CBE0077F09A /* gezi.png */,
 				06C19A031BCCD9F9005739C6 /* SDWebImage */,
 			);
 			path = 3lib;
@@ -309,7 +329,11 @@
 			files = (
 				06220CAE1BCB7E6300E76BC2 /* sun.jpeg in Resources */,
 				06220C8D1BCB59A000E76BC2 /* Main.storyboard in Resources */,
+				06A1B4131BCE3EC50077F09A /* HallOfTheMountainKing.mp3 in Resources */,
+				06A1B40D1BCE3CBE0077F09A /* gezi.png in Resources */,
 				06220CAD1BCB7E6300E76BC2 /* cloud.png in Resources */,
+				06A1B4121BCE3EC50077F09A /* ButtonTap.wav in Resources */,
+				06A1B4141BCE3EC50077F09A /* SecondBeep.wav in Resources */,
 				06220C921BCB59A000E76BC2 /* LaunchScreen.xib in Resources */,
 				06220C8F1BCB59A000E76BC2 /* Images.xcassets in Resources */,
 			);
