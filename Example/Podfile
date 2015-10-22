@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'AnimationLib_Example', :exclusive => true do
+  pod "AnimationLib", :path => "../"
+end
+
+target 'AnimationLib_Tests', :exclusive => true do
+  pod "AnimationLib", :path => "../"
+
+  pod 'Quick', '~> 0.3.1'
+  pod 'Nimble'
+  pod 'FBSnapshotTestCase'
+  pod 'Nimble-Snapshots'
+end
