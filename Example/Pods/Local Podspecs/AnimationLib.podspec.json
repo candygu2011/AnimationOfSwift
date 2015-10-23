@@ -1,0 +1,25 @@
+{
+  "name": "AnimationLib",
+  "version": "0.1.0",
+  "summary": "A Test of Private Pods for self.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/AnimationLib",
+  "license": "MIT",
+  "authors": {
+    "@candygu2011": "candygu2011@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/AnimationLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "AnimationLib": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

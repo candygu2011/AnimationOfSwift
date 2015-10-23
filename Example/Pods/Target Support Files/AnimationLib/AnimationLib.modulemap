@@ -1,0 +1,6 @@
+framework module AnimationLib {
+  umbrella header "AnimationLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
