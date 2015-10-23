@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AnimationLib
 
 [![CI Status](http://img.shields.io/travis/@candygu2011/AnimationLib.svg?style=flat)](https://travis-ci.org/@candygu2011/AnimationLib)
@@ -27,3 +28,7 @@ pod "AnimationLib"
 ## License
 
 AnimationLib is available under the MIT license. See the LICENSE file for more info.
+=======
+# AnimationOfSwift
+__参照网上优秀案例__
+>>>>>>> d34aa0cadde1a4a16ecbe071e561b4b49ad9c6b4
